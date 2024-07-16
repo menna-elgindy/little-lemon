@@ -1,0 +1,14 @@
+header{
+
+ grid-column: 1/-1;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ background-color: #EDEFEE;
+ padding:10px;
+
+}
+#logo{
+    width:200px;
+    height:70px;
+}

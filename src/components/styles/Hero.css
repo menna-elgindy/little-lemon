@@ -1,0 +1,43 @@
+#hero{
+display: flex;
+justify-content:space-evenly ;
+padding:40px;
+background-color: #495E57;
+}
+#hero-img{
+    width: 375px;
+    height: 325px;
+}
+#hero>div{
+    width: 400px;
+}
+#hero>div>h1{
+    color:#F4CE14;
+    font-size: 60px;
+    font-family: "Markazi";
+    font-weight: 500;
+    margin-bottom: 10px;
+   
+}
+#hero>div>h3{
+    color:#EDEFEE;
+    font-size: 40px;
+    font-family: "Markazi";
+    margin: 0;
+   
+}
+#hero>div>p{
+    color: #EDEFEE;
+    font-size: 18px;
+    font-family: "karla";
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+#hero>div>a{
+    text-decoration: none;
+    color: #EDEFEE;
+    padding: 20px;
+    border:none;
+    border-radius: 8px;
+    background-color: #F4CE14;
+}

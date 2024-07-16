@@ -1,0 +1,44 @@
+#about{
+    display: flex;
+    justify-content:space-evenly ;
+    padding-top:40px;
+    background-color: white;
+    color:#333333;
+    }
+#owners-img1,#owners-img2{
+    transform: scaleX(-1);
+    margin-top: 60px;
+    width: 270px;
+    height: 340px;
+    border-radius: 8px;
+}
+#owners-img1{
+    position:relative;
+    left:-100px;
+    top:-100px;
+}
+#about>div{
+    width: 400px;
+}
+#ownerImgs-container{
+    display: flex;
+}
+#about>div>h1{
+    
+    font-size: 60px;
+    font-family: "Markazi";
+    font-weight: 500;
+    margin-bottom: 10px;
+   
+}
+#about>div>h3{
+    font-size: 40px;
+    font-family: "Markazi";
+    margin: 0;
+   
+}
+#about>div>p{
+    font-size: 18px;
+    font-family: "karla";
+    font-weight: 500;
+}

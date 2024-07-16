@@ -1,12 +1,13 @@
+import "./styles/Header.css"
 import Nav from "./Nav"
 import logo from "../assets/imgs/logo.jpg"
 
 function Header() {
     return (
-      <>
-        <img src={logo} alt="logo"/>
+      <header>
+        <img src={logo} alt="logo" id="logo"/>
         <Nav />
-      </>
+      </header>
     );
 } 
 

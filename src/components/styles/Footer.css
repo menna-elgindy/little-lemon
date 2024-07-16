@@ -1,0 +1,28 @@
+footer{
+    grid-column: 1/-1;
+    grid-row: -1/-1;
+    background-color: #495E57;
+    color: white;
+    padding:20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+#footer-logo{
+    filter: brightness(0) invert(1);
+    width:160px;
+    height:280px;
+}
+div>h5>a{
+    color: white;
+   text-decoration: none;
+    font-weight: 500;
+}
+
+div>h5>a:hover{
+    color:#333333;
+}
