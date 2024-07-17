@@ -19,6 +19,7 @@
 }
 #about>div{
     width: 400px;
+    padding: 20px;
 }
 #ownerImgs-container{
     display: flex;

@@ -1,7 +1,7 @@
 
 function Menu(){
     return(
-        <section>Menu</section>
+        <section id="menu">Menu</section>
     )
 }
 export default Menu;

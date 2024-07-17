@@ -1,5 +1,6 @@
 import './styles/Hero.css'
 import heroImg from '../assets/imgs/hero-img.jpg'
+import { Link } from 'react-router-dom';
 function Hero(){
     return(
         <section id="hero">
@@ -8,7 +9,7 @@ function Hero(){
                 <h3>chicago</h3>
                 <p>We are a family owned Mediterranean restaurant,
                      focused on traditional recipes served with a modern twist.</p>
-                <a href="/reservation">reserve a table</a>
+                <Link to="/booking">reserve a table</Link>
             </div>
             <img src={heroImg} alt="hero-img" id='hero-img'/>
         </section>

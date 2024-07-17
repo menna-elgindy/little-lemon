@@ -41,3 +41,6 @@ background-color: #495E57;
     border-radius: 8px;
     background-color: #F4CE14;
 }
+#hero>div>a:hover{
+    background-color: #333333;
+}
