@@ -1,0 +1,25 @@
+#menu{
+    padding-top:40px;
+}
+#menu>div{
+    display:flex;
+    justify-content: space-around;
+}
+#menu>div>h1{
+    color:#495E57;
+    
+    font-weight: bolder;
+}
+
+#menu-btn{
+    text-decoration: none;
+    color: #EDEFEE;
+    padding: 20px;
+    border:none;
+    border-radius: 8px;
+    background-color: #F4CE14;
+}
+
+#menu-btn:hover{
+    background-color: #333333;
+}

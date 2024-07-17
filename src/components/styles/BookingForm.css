@@ -1,0 +1,33 @@
+form{
+    display: grid;
+    gap:20px;
+     max-width: 200px;
+     justify-content: center;
+     margin: auto;
+
+}
+label,input,select{
+    color: #333333;
+    font-size: 20px;
+}
+input,select{
+    border:1px #F4CE14 solid;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#submit-btn{
+    color:white;
+    background-color: #F4CE14;
+    font-size: 20px;
+    font-weight: bolder;
+    padding:15px;
+    border: none;
+    border-radius: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#submit-btn:hover{
+    background-color: #495E57;
+}
