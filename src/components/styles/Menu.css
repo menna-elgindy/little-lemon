@@ -3,7 +3,7 @@
 }
 #menu>div{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 #menu>div>h1{
     color:#495E57;

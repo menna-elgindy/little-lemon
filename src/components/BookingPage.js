@@ -1,29 +1,45 @@
 import './styles/BookingPage.css'
 import BookingForm from './BookingForm';
+import { fetchAPI,submitAPI } from '../API';
 import React, { useState,useReducer } from "react";
+import { useNavigate } from "react-router-dom";
+
 function BookingPage(){
+    const date = new Date();
+    const day = (date.getDate()>=10)?date.getDate():`0${date.getDate()}`
+    const month = (date.getMonth()+1>=10)?date.getMonth()+1:`0${date.getMonth()+1}`
+    const year = date.getFullYear();
+    const currentDate = `${year}-${month}-${day}`;
+
     const[inputValues,setInputValues]=useState({
-        date:'2024-07-17',
+        date:currentDate,
         time:'17:00',
         guestsNum:1,
         occassion:'Birthday'
     });
 
-    function updateTimes( state,action){
-       
+    const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
+    const navigate = useNavigate();
+
+    function updateTimes( state,action){ 
         if (action.type === 'date-changed') {
             return (
-                {...state,times:['1:00','2:00','3:00','4:00','5:00','6:00']}
+                {...state,times:fetchAPI(action.value)}
             );
           }   
         throw Error('Unknown action.');
     }
 
     function initializeTimes(){
-        return({times:["17:00","18:00","19:00","20:00","21:00","22:00"]});
+        return({times:fetchAPI(date)});
     }
-    const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
 
+    function submitForm(){
+        submitAPI(inputValues);
+        if(submitAPI(inputValues)){
+            navigate('/confirmation')
+        }
+    }
 
     return(
             <section id='booking'>
@@ -32,8 +48,10 @@ function BookingPage(){
                 <BookingForm 
                    inputValues={inputValues}
                    setInputValues={setInputValues}
+                   currentDate={currentDate}
                    availableTimes={availableTimes}
                    dispatch={dispatch}
+                   submitForm={submitForm}
                 />
             </section>
     )

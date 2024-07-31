@@ -1,12 +1,13 @@
 import "./styles/Nav.css"
 import {Link} from 'react-router-dom'
+import { HashLink } from "react-router-hash-link";
 function Nav() {
     return (
       <nav>
          <ul>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/#about'>About</Link></li>
-            <li><Link to='/#menu'>Menu</Link></li>
+            <li><HashLink to='/#about'>About</HashLink></li>
+            <li><HashLink to='/#menu'>Menu</HashLink></li>
             <li><Link to='/booking'>Reservation</Link></li>
          </ul>
       </nav>

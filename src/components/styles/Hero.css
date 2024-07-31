@@ -7,6 +7,7 @@ background-color: #495E57;
 #hero-img{
     width: 375px;
     height: 325px;
+    border-radius: 8px;
 }
 #hero>div{
     width: 400px;

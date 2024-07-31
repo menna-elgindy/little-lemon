@@ -1,21 +1,16 @@
 import './styles/BookingForm.css'
-function BookingForm({inputValues,setInputValues,availableTimes,dispatch}){
+
+function BookingForm({inputValues,setInputValues,currentDate,availableTimes,dispatch,submitForm}){
 
     function handleSubmit(e){
         e.preventDefault();
-        console.log(inputValues);
-        setInputValues({
-            date:'2024-07-17',
-            time:'17:00',
-            guestsNum:1,
-            occassion:'Birthday'
-        })
+        submitForm();
     }
 
     function handleChangeDate(e){
         e.preventDefault()
         setInputValues({...inputValues, date:e.target.value})
-       dispatch({type:'date-changed'})
+       dispatch({type:'date-changed',value:new Date(e.target.value)})
     }
     return(
         <form onSubmit={handleSubmit}>
