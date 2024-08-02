@@ -45,3 +45,15 @@ background-color: #495E57;
 #hero>div>a:hover{
     background-color: #333333;
 }
+@media screen and (max-width: 1000px) {
+    #hero{
+        flex-direction: column;
+    }
+    #hero-img{
+        width: 100%;
+        margin-top: 30px;
+    }
+    #hero>div{
+        width: 100%;
+    }
+}

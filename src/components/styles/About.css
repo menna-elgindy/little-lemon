@@ -43,3 +43,16 @@
     font-family: "karla";
     font-weight: 500;
 }
+@media screen and (max-width: 1000px) {
+    #about{
+        flex-direction: column;
+    }
+    #about>div{
+        width:90%;
+    }
+    #owners-img1,#owners-img2{
+        width: 200px;
+    }
+
+
+}

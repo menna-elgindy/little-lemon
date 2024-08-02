@@ -1,12 +1,14 @@
 .confirmed{
     width:50%;
+    height: 30vh;
     text-align: center;
     background-color: #EDEFEE;
     margin:50px auto;
     border-radius: 16px;
+    padding: 50px;
 }
 
 .confirmed>h1{
     color:#495E57;
-    padding: 50px;
+
 }
