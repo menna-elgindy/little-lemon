@@ -1,6 +1,6 @@
 import './styles/BookingForm.css'
 
-function BookingForm({inputValues,setInputValues,currentDate,availableTimes,dispatch,submitForm}){
+function BookingForm({inputValues,setInputValues,availableTimes,dispatch,submitForm}){
 
     function handleSubmit(e){
         e.preventDefault();

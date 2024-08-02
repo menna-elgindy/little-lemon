@@ -22,6 +22,7 @@ function BookingPage(){
     const navigate = useNavigate();
 
     function updateTimes( state,action){ 
+        console.log(fetchAPI(action.value))
         if (action.type === 'date-changed') {
             return (
                 {...state,times:fetchAPI(action.value)}
